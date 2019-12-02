@@ -1,0 +1,27 @@
+{
+  "name": "repair-design",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inessashuvalova/repair-design.git"
+  },
+  "author": "I.S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inessashuvalova/repair-design/issues"
+  },
+  "homepage": "https://github.com/inessashuvalova/repair-design#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser": "^0.2.6",
+    "sync": "^0.2.5"
+  }
+}
