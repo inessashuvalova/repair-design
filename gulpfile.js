@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-const minifyCSS = require('gulp-minify-css');
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
 gulp.task('hello', function(done) {
  console.log('Привет, мир!');
@@ -18,9 +19,10 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('minify-css', function() {
-  return gulp.src('./*.css')
-    .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(gulp.dest('./out/'))
+gulp.task('minify-css', () => {
+  return gulp.src(['src/css/.css', '!src/css/.min.css'])
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('/out/'))
 });
+
  
