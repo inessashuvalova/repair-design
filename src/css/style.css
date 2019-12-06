@@ -365,11 +365,13 @@ template {
 }
 
 .button--primary {
+  cursor: pointer;
   background-color: #E3B873;
   color: #FFFFFF;
 }
 
 .button--outline {
+  cursor: pointer;
   border: 1px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
@@ -484,6 +486,7 @@ template {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .instagram {
@@ -500,11 +503,18 @@ template {
 }
 
 .instagram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: #E3B873;
   text-decoration: none;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  line-height: 0.8;
 }
 
 .title {
