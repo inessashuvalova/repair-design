@@ -411,6 +411,22 @@ template {
   margin-right: 45px;
 }
 
+.hero {
+  background: s-dark;
+  height: 100vh;
+  color: #FFFFFF;
+}
+
+.hero__instagram {
+  position: absolute;
+  max-width: 80px;
+  height: 100%;
+}
+
+.instagram {
+  background-color: #131313;
+}
+
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px;
