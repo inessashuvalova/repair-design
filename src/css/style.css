@@ -382,6 +382,9 @@ template {
 .button--primary:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 .button--outline {
@@ -390,10 +393,57 @@ template {
   color: #FFFFFF;
 }
 
+.button--outline:hover {
+  background-color: #E3B873;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
   margin: auto;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+}
+
+.section-title__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__image::before, .section-title__image::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  margin: 0 10px;
 }
 
 .header {
@@ -441,7 +491,14 @@ template {
 }
 
 .contacts__phone {
+  color: #E3B873;
   margin-right: 45px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.contacts__phone:hover {
+  color: #FFFFFF;
 }
 
 .hero {
@@ -468,6 +525,8 @@ template {
 .hero::before {
   content: '';
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(19, 19, 19, 0.7);
@@ -526,6 +585,15 @@ template {
   margin-left: 12px;
 }
 
+.hero__scroll-down:hover {
+  background-color: #E3B873;
+  color: #FFFFFF;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
 .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +630,10 @@ template {
   margin-left: 8px;
 }
 
+.instagram__link:hover {
+  color: #FFFFFF;
+}
+
 .title {
   margin: 0;
   text-transform: uppercase;
@@ -571,15 +643,5 @@ template {
 
 .title--primary {
   color: #E3B873;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
