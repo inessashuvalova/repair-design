@@ -370,27 +370,27 @@ template {
 
 .button--primary {
   background-color: #E3B873;
+  border: 1px solid transparent;
   color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button--primary:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
 }
 
 .button--outline {
-  border: 1px solid #FFFFFF;
   background-color: transparent;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button--outline:hover {
@@ -398,10 +398,7 @@ template {
   color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  border: 1px solid #E3B873;
 }
 
 .container {
@@ -493,12 +490,23 @@ body {
 .contacts__phone {
   color: #E3B873;
   margin-right: 45px;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts__phone:hover {
   color: #FFFFFF;
+}
+
+.contacts__button {
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__button:hover {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 .hero {
@@ -544,6 +552,7 @@ body {
 
 .hero__button {
   margin-right: 20px;
+  border: 1px solid #FFFFFF;
 }
 
 .hero__instagram {
@@ -573,6 +582,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  -webkit-transition: -webkit-box-shadow 0.2s color 0.3s;
+  transition: -webkit-box-shadow 0.2s color 0.3s;
+  transition: box-shadow 0.2s color 0.3s;
+  transition: box-shadow 0.2s color 0.3s, -webkit-box-shadow 0.2s color 0.3s;
 }
 
 .hero__scroll-down::after {
@@ -588,10 +601,6 @@ body {
 .hero__scroll-down:hover {
   background-color: #E3B873;
   color: #FFFFFF;
-  -webkit-transition: -webkit-box-shadow 0.2s;
-  transition: -webkit-box-shadow 0.2s;
-  transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .instagram {
@@ -620,6 +629,8 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   line-height: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .instagram__link::after {
