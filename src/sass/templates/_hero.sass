@@ -20,12 +20,18 @@
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
+  &__title
+    margin-bottom: 1rem
   &__text
     font-size: 1.57rem
     max-width: 500px
+    line-height: 131%
+    margin: 0
+    margin-bottom: 3rem
   &__button
     margin-right: 20px
     border: 1px solid $light
+    padding: 20px 35px
   &__instagram
     position: absolute
     left: 0
@@ -46,6 +52,7 @@
     text-decoration: none
     color: $light
     transition: box-shadow 0.2s color 0.3s
+    font-size: 0.86rem
     &::after
       content: ''
       background: url('../img/arrow-down.svg') no-repeat center
@@ -71,6 +78,7 @@
     transform: rotate(90deg)
     line-height: 0.8
     transition: 0.3s
+    font-size: 1.1rem
     &::after
       content: ''
       width: 50px
@@ -84,6 +92,7 @@
   text-transform: uppercase
   font-family: 'Yeseva One', cursive
   font-size: 2.875rem
+  line-height: 1.4
   &--primary
     color: $primary
 
