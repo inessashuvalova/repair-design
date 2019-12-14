@@ -743,21 +743,50 @@ body {
   }
 }
 
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 14px;
+@media screen and (max-width: 375px) {
+  .hero__content {
+    margin-left: 1.53rem;
   }
+  .phone {
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .menu {
     margin: 0;
     padding: 0;
   }
   .logo {
-    font-size: 0.867rem;
-    margin-left: 0.75rem;
+    font-size: 0.923rem;
   }
   .contacts__phone {
     font-size: 0.867rem;
-    margin-right: 0.68rem;
+  }
+  .phone {
+    margin-left: 4rem;
+  }
+  .title {
+    font-size: 1.64rem;
+  }
+  .hero__scroll-down {
+    display: none;
+  }
+  .hero__title {
+    font-size: 1.64rem;
+    margin-bottom: 1.43rem;
+    line-height: 133%;
+  }
+  .hero__text {
+    font-size: 1.28rem;
+    margin-bottom: 2.28rem;
+    line-height: 130%;
+  }
+  .hero__button {
+    display: block;
+    min-width: none;
+    margin-left: 1.05rem;
+    padding: 1.3rem 2.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
