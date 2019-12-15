@@ -784,6 +784,10 @@ body {
 }
 
 @media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
   .menu {
     margin: 0;
     padding: 0;
@@ -801,7 +805,7 @@ body {
     font-size: 1.64rem;
   }
   .hero__content {
-    margin-left: 1.8rem;
+    margin-left: 1.19rem;
   }
   .hero__scroll-down {
     display: none;
