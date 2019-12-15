@@ -515,7 +515,7 @@ body {
 .contacts__button {
   min-width: 11.5rem;
   padding: 0.73rem 1.49rem;
-  border: 0.04 solid transparent;
+  border: 0.04rem solid transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-right: 2.45rem;
@@ -687,6 +687,30 @@ body {
   color: #E3B873;
 }
 
+@media screen and (max-width: 1314px) {
+  html {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 1.075rem;
+    font-weight: 700;
+    margin-right: 1.42rem;
+  }
+  .nav__item {
+    font-size: 0.99rem;
+    margin-right: 1.76rem;
+  }
+  .contacts__phone {
+    margin-right: 0.83rem;
+    font-family: 'Futura Demi', sans-serif;
+  }
+  .contacts__button {
+    padding: 0.73rem 1.49rem;
+    font-weight: 500;
+    font-family: 'Futura Demi', sans-serif;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   html {
     font-size: 12px;
@@ -746,6 +770,7 @@ body {
 @media screen and (max-width: 375px) {
   .container {
     width: 100%;
+    margin: 0 auto;
   }
   .logo {
     margin-left: 2rem;
@@ -754,7 +779,7 @@ body {
     margin-left: 4rem;
   }
   .phone {
-    margin-right: 3.5rem;
+    margin-right: 4.15rem;
   }
 }
 
@@ -770,10 +795,13 @@ body {
     font-size: 0.867rem;
   }
   .phone {
-    margin-left: 4rem;
+    margin-right: 2.15rem;
   }
   .title {
     font-size: 1.64rem;
+  }
+  .hero__content {
+    margin-left: 1.8rem;
   }
   .hero__scroll-down {
     display: none;
@@ -791,7 +819,6 @@ body {
   .hero__button {
     display: block;
     min-width: none;
-    margin-left: 1.05rem;
     padding: 1.3rem 2.9rem;
   }
 }
