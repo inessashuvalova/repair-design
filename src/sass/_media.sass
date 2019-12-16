@@ -1,6 +1,9 @@
 @media screen and ( max-width: 1314px  )
+
   html
     font-size: 14px
+  .container
+    width: 85%
   .logo
     font-size: 1.075rem
     font-weight: 700
@@ -19,8 +22,13 @@
       font-family: 'Futura Demi', sans-serif
 
 @media screen and ( max-width: 1280px  )
+
   html
-    font-size: 12px
+    font-size: 14px
+  .container
+    width: 85%
+  .logo
+    margin-right: 1.42rem
   .nav
     &__item
       margin-right: 1rem
@@ -55,7 +63,6 @@
       margin-bottom: 2.28rem
     &__button
       display: block
-      min-width: 22.86rem
       margin-bottom: 1.85rem
 
 @media screen and ( max-width: 520px  )
@@ -65,17 +72,19 @@
 @media screen and ( max-width: 375px  )
   .container
     width: 100%
-    margin: 0 auto
   .logo
-    margin-left: 2rem
-  // .contacts
-  //   &__phone
-  //     margin-right: 1rem
+    margin-left: 1rem
   .hero
     &__content
-      margin-left: 4rem
+      margin-left: 2.59rem
   .phone
-    margin-right: 4.15rem
+    margin-right: 1.15rem
+  .button
+    font-size: 0.78rem
+    &--primary
+      padding: 1.3rem 4.9rem
+    &--outline
+      padding: 1.3rem 5.9rem
 
 @media screen and ( max-width: 320px  )
   .container
@@ -106,7 +115,9 @@
       font-size: 1.28rem
       margin-bottom: 2.28rem
       line-height: 130%
-    &__button
-      display: block
-      min-width: none
-      padding: 1.3rem 2.9rem
+  .button
+    font-size: 0.78rem
+    &--primary
+      padding: 1.3rem 4.9rem
+    &--outline
+      padding: 1.3rem 5.9rem
