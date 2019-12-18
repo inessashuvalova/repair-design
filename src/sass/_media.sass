@@ -92,8 +92,22 @@
   .card
     &__text
       margin-left: 0
+  .design
+    background-color: $dark
+    &__section-title
+      color: $light
+    &__card
+      margin-bottom: 5.7rem
+  .wrapper
+    flex-direction: column
+    align-items: center
 
 @media (max-width: 520px)
+  .section
+    &__title
+      &__description
+        max-width: 21.86rem
+        font-size: 1.43rem
   .contacts
     &__button
       display: none
@@ -131,3 +145,6 @@
       font-size: 0.78rem
       margin-bottom: 1rem
       min-width: 18.28rem
+  .section-title
+    &__heading
+      font-size: 1.43rem
