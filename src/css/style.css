@@ -907,11 +907,10 @@ img {
             align-items: center;
   }
   .types__card {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
   .card__text {
     margin-left: 0;
-    margin-bottom: 4rem;
   }
   .design {
     background-color: #131313;
