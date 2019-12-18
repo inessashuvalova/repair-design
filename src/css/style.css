@@ -862,8 +862,8 @@ img {
   .hero__scroll-down {
     display: none;
   }
-  .hero__content {
-    margin-left: 0;
+  .card__pricetag {
+    font-size: 0.87rem;
   }
 }
 
@@ -908,6 +908,9 @@ img {
   }
   .types__card {
     margin-bottom: 5rem;
+  }
+  .card {
+    margin-bottom: 4rem;
   }
   .card__text {
     margin-left: 0;
