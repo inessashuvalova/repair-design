@@ -442,6 +442,31 @@ template {
   margin: auto;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-30 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.col-50 {
+  width: 40%;
+}
+
+.col-51 {
+  width: 60%;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -464,14 +489,46 @@ img {
   padding: 60px 0;
 }
 
+.section--dark {
+  text-align: center;
+  background-color: #131313;
+  color: #FFFFFF;
+}
+
 .section-title {
   text-align: center;
+}
+
+.section-title--left {
+  text-align: left;
 }
 
 .section-title__heading {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 1.43rem;
+  line-height: 138%;
+}
+
+.section-title__heading--primary {
+  color: #E3B873;
+}
+
+.section-title__word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__word::after {
+  content: '';
+  width: 92px;
+  height: 2px;
+  background-color: #E3B873;
+  margin-left: 2rem;
 }
 
 .section-title__image {
@@ -729,6 +786,81 @@ img {
 
 .title--primary {
   color: #E3B873;
+}
+
+.project {
+  background: #131313 url("../img/project-bg-line.svg") no-repeat center;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.swiper-slide-image {
+  margin-top: -7rem;
+}
+
+.swiper-slide__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide__heading {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-family: 'Yeseva One', cursive;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 0.64rem;
+}
+
+.swiper-pagination-bullets {
+  width: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+
+.swiper-button__navigation {
+  margin-top: 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 3rem;
+  width: 42px;
+  height: 14px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center;
+}
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0;
+  left: 64px;
 }
 
 .types__section-title {
@@ -999,6 +1131,44 @@ img {
   .card__pricetag {
     font-size: 0.87rem;
   }
+  .section--dark {
+    padding-top: 0.12rem;
+    padding-bottom: 3rem;
+  }
+  .section-title__heading {
+    margin-top: 2.57rem;
+    text-align: center;
+    line-height: 138%;
+  }
+  .section-title__word {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-title__word::after {
+    display: none;
+  }
+  .section-title__text {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    line-height: 140%;
+    margin-bottom: 2.57rem;
+    margin-top: 1.57rem;
+    max-width: none;
+  }
+  .col-51 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1063,6 +1233,18 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .swiper-slide-image {
+    margin: 0;
+  }
+  .swiper-slide__text {
+    margin-left: 0;
+  }
+  .swiper-slide__heading {
+    font-size: 1rem;
+  }
+  .swiper-slide__value {
+    font-size: 1rem;
   }
 }
 

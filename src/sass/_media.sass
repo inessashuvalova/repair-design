@@ -61,6 +61,33 @@
   .card
     &__pricetag
       font-size: 0.87rem
+  .section
+    &--dark
+      padding-top: 0.12rem
+      padding-bottom: 3rem
+    &-title
+      &__heading
+        margin-top: 2.57rem
+        text-align: center
+        line-height: 138%
+      &__word
+        display: flex
+        justify-content: center
+        &::after
+          display: none
+      &__text
+        font-size: 1.1rem
+        text-align: center
+        margin: auto
+        line-height: 140%
+        margin-bottom: 2.57rem
+        margin-top: 1.57rem
+        max-width: none
+  .col-51
+    order: -1
+    width: 100%
+  .col-50
+    width: 100%
 
 @media (max-width: 767px)
   .contacts
@@ -104,7 +131,18 @@
   .wrapper
     flex-direction: column
     align-items: center
+  .swiper
+    &-slide
+      &-image
+        margin: 0
+      &__text
+        margin-left: 0
+      &__heading
+        font-size: 1rem
+      &__value
+        font-size: 1rem
 
+  
 @media (max-width: 520px)
   .section
     &__title
