@@ -83,12 +83,21 @@
         margin-bottom: 2.57rem
         margin-top: 1.57rem
         max-width: none
+  .design
+    background-color: $dark
+    &__section-title
+      color: $light
+    &__card
+      margin-bottom: 5.7rem
+  .wrapper
+    flex-direction: column
+    align-items: center
   .col-51
     order: -1
     width: 100%
   .col-50
-    width: 100%
-
+    width: 100%  
+ 
 @media (max-width: 767px)
   .contacts
     &__phone
@@ -122,27 +131,7 @@
   .card
     &__text
       margin-left: 0
-  .design
-    background-color: $dark
-    &__section-title
-      color: $light
-    &__card
-      margin-bottom: 5.7rem
-  .wrapper
-    flex-direction: column
-    align-items: center
-  .swiper
-    &-slide
-      &-image
-        margin: 0
-      &__text
-        margin-left: 0
-      &__heading
-        font-size: 1rem
-      &__value
-        font-size: 1rem
 
-  
 @media (max-width: 520px)
   .section
     &__title
