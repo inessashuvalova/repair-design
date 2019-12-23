@@ -810,7 +810,7 @@ img {
 }
 
 .projects {
-  background: #131313 url("../img/project-bg-line.svg") no-repeat center;
+  background: #131313;
   padding-bottom: 30rem;
 }
 
@@ -1051,6 +1051,10 @@ img {
   padding: 1.214rem 2.6rem;
 }
 
+.design {
+  padding-bottom: 30rem;
+}
+
 .design__section-title {
   margin-bottom: 2.78rem;
 }
@@ -1125,6 +1129,10 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 2rem;
+}
+
+.footer__button {
+  margin: auto;
 }
 
 .policy__label {
