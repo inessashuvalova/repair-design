@@ -436,6 +436,14 @@ template {
   color: #FFFFFF;
 }
 
+label.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -1082,11 +1090,17 @@ img {
   margin-top: -7rem;
 }
 
-.footer-wrap {
+.footer {
+  background: #131313 url("../img/foooter-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem;
+}
+
+.footer__wrap {
   background-color: #181818;
-  max-width: 53.07rem;
-  margin-top: -20rem;
+  max-width: 63.07rem;
   margin: auto;
+  margin-top: -20rem;
+  margin-bottom: 3.714rem;
   padding: 2.5rem;
 }
 
@@ -1097,6 +1111,7 @@ img {
   font-size: 1.428rem;
   text-align: center;
   margin-bottom: 3.214rem;
+  margin-top: 0;
 }
 
 .footer__form {
@@ -1105,6 +1120,31 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 37.142rem;
+  margin: auto;
+}
+
+.footer__input {
+  padding-top: 0.3rem;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.footer__input::placeholder {
+  color: #FFFFFF;
 }
 
 .footer__input-group {
@@ -1115,31 +1155,40 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  margin-bottom: 2rem;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-bottom: 3.2rem;
 }
 
 .footer__input-group--full-width {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-bottom: 2rem;
 }
 
 .footer__policy {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3.6rem;
+}
+
+.footer__policy--label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__button {
   margin: auto;
-}
-
-.policy__label {
+  padding: 1.285rem 4.785rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.142rem;
+}
+
+.footer__menu {
+  background-color: #131313;
+  padding: 3.285rem 0;
 }
 
 .modal {
@@ -1205,7 +1254,14 @@ img {
           flex-direction: column;
 }
 
-.modal__input {
+.modal__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3.428rem;
 }
 
