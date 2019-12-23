@@ -17,6 +17,8 @@ img
     text-align: center
     &--left
       text-align: left
+    &--light
+      color: $light
     &__heading
       font-family: 'Yeseva One', cursive
       text-transform: uppercase
@@ -43,6 +45,14 @@ img
       display: flex
       justify-content: center
       align-items: center
+      &::before, &::after
+        content: ''
+        display: inline-block
+        vertical-align: text-top
+        width: 2.29rem
+        height: 0.14rem
+        background-color: $primary
+        margin: 0 0.71rem
     &__description
       margin: auto
       margin-top: 1.64rem

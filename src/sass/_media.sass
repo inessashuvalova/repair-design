@@ -110,6 +110,21 @@
     width: 100%
   .col-50
     width: 100%
+  .control
+    background-color: $dark
+    &__section-title
+      padding-top: 28rem
+    &__text
+      color: $light
+    &__label
+      color: rgba($secondary, 0.5)
+    &__input
+      &--light
+        &::placeholder
+          color: $light
+    &__policy
+      &--label
+        color: $light
 
 @media (max-width: 767px)
   .contacts
@@ -141,6 +156,17 @@
   .card
     &__text
       margin-left: 0
+  .control
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      margin-bottom: 4.842rem
+    &__policy
+      &--label
+        margin-top: 1.325rem
+    &__button
+      padding: 1.5rem 2rem
 
 @media (max-width: 520px)
   .section
@@ -166,6 +192,9 @@
         padding: 1.3rem 5.9rem
   .instagram
     display: none
+  .control
+    &__button
+      padding: 1rem 2rem
 
 @media (max-width: 400px)
   .menu
