@@ -6,12 +6,12 @@
   echo 'Привет, ' . $name . ' Твой номер телефона: ' . $phone . ' Твой email: ' .$email;
 
   // Load Composer's autoloader
-  require 'phpmailer/PHPMailer.php';
-  require 'phpmailer/SMTP.php';
-  require 'phpmailer/Exception.php';
+  require 'src/phpmailer/PHPMailer.php';
+  require 'src/phpmailer/SMTP.php';
+  require 'src/phpmailer/Exception.php';
 
   // Instantiation and passing `true` enables exceptions
-  $mail = new src\PHPMailer\PHPMailer\PHPMailer();
+  $mail = new PHPMailer\PHPMailer\PHPMailer();
 
   try {
       //Server settings
