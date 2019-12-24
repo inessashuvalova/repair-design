@@ -1641,6 +1641,14 @@ img {
   .control__button {
     padding: 1rem 2rem;
   }
+  .footer__input {
+    max-width: 15rem;
+  }
+  .footer__contact {
+    font-size: 1.285rem;
+    line-height: 138%;
+    width: 19.28rem;
+  }
 }
 
 @media (max-width: 400px) {
