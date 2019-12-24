@@ -46,15 +46,20 @@ $(document).ready(function () {
   new WOW().init();
 
   // Валидация формы
-  $('.form').validate({
+  $('.modal__form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
       userName: {
         required: true,
-        minlenght: 2
+        minlength: 2,
+        maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
@@ -64,35 +69,113 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Имя обязательно",
-        minlength: "Имя не короче двух букв"
-    }, 
-      userPhone: "Телефон обязателен",
+        minlength: "Слишком короткое имя",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Слишком короткий номор",
+        maxlength: "Номер не должен быть больше 11 символов"
+      },
       userEmail: {
         required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
+        email: "Введите в формате name@domain.com"
       }
     }
   });
 
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
+      // правило-объект (блок)
+      userQuestion: {
+        required: true,
+        minlength: 2,
+        maxlength: 40
+      }
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Слишком короткое имя",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Слишком короткий номор",
+        maxlength: "Номер не должен быть больше 11 символов"
+      },
+      userQuestion: {
+        required: "Укажите свой вопрос",
+        minlength: "Что вы хотите узнать",
+        maxlength: "Вопрос не должен привышеть 40 символов"
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
+      // правило-объект (блок)
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Слишком короткое имя",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Слишком короткий номор",
+        maxlength: "Номер не должен быть больше 11 символов"
+      },
+    }
+  });
+
+
   // маска для номера телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000', {
+    placeholder: "+7 (___) __-__-___"
+  });
 
   //создание карты
-   // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.76, 37.64],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 7
-        });
-    }
-});
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
 
+  function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.76, 37.64],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 7
+    });
+  }
+});
