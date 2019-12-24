@@ -974,6 +974,12 @@ img {
   padding: 1.2857rem 4.7857rem;
 }
 
+.control__button:hover {
+  background-color: transparent;
+  border: 1px solid #131313;
+  color: #E3B873;
+}
+
 .control__label {
   margin-bottom: -7px;
 }
@@ -1157,7 +1163,7 @@ img {
           flex-direction: column;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.2rem;
 }
 
 .footer__input-group--full-width {
@@ -1169,7 +1175,7 @@ img {
 .footer__policy {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.6rem;
 }
 
 .footer__policy--label {
@@ -1189,6 +1195,10 @@ img {
 .footer__menu {
   background-color: #131313;
   padding: 3.285rem 0;
+}
+
+.footer__map {
+  margin-bottom: 4rem;
 }
 
 .modal {
@@ -1265,7 +1275,11 @@ img {
   margin-bottom: 3.428rem;
 }
 
-.modal__input:last-of-type {
+.modal__input-group:placeholder {
+  color: #FFFFFF;
+}
+
+.modal__input-group:last-of-type {
   margin-bottom: 1rem;
 }
 

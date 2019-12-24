@@ -46,7 +46,7 @@ $(document).ready(function () {
   new WOW().init();
 
   // Валидация формы
-  $('.modal__form').validate({
+  $('.form').validate({
     errorClass: "invalid",
     rules: {
       // строчное правило
