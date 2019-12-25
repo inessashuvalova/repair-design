@@ -3,7 +3,6 @@
   $userName = $_POST['userName'];
   $userEmail = $_POST['userEmail'];
   $userPhone = $_POST['userPhone'];
-  echo 'Привет, ' . $name . ' Твой номер телефона: ' . $phone . ' Твой email: ' .$email;
 
   // Load Composer's autoloader
   require 'src/phpmailer/PHPMailer.php';
