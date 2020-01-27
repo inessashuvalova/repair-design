@@ -1,25 +1,48 @@
 @font-face {
-  font-family: 'Futura Book';
-  src:
-  url('../fonts/futura/FuturaBookC.woff') format('woff'),
-  url('../fonts/futura/FuturaBookC.woff2') format('woff');
+  font-family: 'Roboto-Regular';
+  src: 
+  url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Regular.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
   }
 
-  @font-face {
-    font-family: 'Futura Demi';
-    src:
-    url('../fonts/futura/FuturaDemiC.woff') format('woff'),
-    url('../fonts/futura/FuturaDemiC.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: wrap;
-    }
-
-  @mixin demi {
-    font-family: Futura Demi, sans-serif;
+@font-face {
+  font-family: 'Roboto-Light';
+  src: 
+  url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Light.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: 
+  url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   }
 
-  
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: 
+  url('../fonts/roboto/RobotoCondensed-Bold.woff') format('woff'),
+  url('../fonts/roboto/RobotoCondensed-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  } 
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: 
+  url('../fonts/roboto/RobotoCondensed-Regular.woff') format('woff'),
+  url('../fonts/roboto/RobotoCondensed-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  } 

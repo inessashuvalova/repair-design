@@ -1,100 +1,93 @@
 .hero
-  position: relative
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: flex-start
-  margin-top: 4.59rem
-  background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
+  background: $light url('../img/hero-image/hero_image.png') no-repeat center/110rem
   height: 100vh
-  color: $light
-  &::before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    background-color: rgba($dark, 0.7)
-  &__content
-    position: relative
-    max-width: 47.85rem
-    margin-left: 4.28rem
+  padding-bottom: 70px
+  &__title 
+    max-width: 69.285rem
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    font-family: 'RobotoCondensed-Bold', sans-serif
+    font-weight: bold
   &__title
-    margin-bottom: 1.36rem
-    line-height: 3.78rem
-    font-size: 2.86rem
-  &__text
-    font-size: 1.57rem
-    max-width: 35.72rem
-    margin-bottom: 2.93rem
-    line-height: 2.18rem
-    font-size: 1.56rem
-  &__button
-    margin-right: 1.2rem
-  &__instagram
-    position: absolute
-    left: 0
-    top: 0
-    max-width: 5.72rem
-    height: 100%
-  &__scroll-down
-    position: absolute
+    &--big 
+      color: $lightbrown
+      font-size: 3.285rem
+      line-height: 2.4rem
+      margin-top: 6.5rem
+  &__title
+    &--small 
+      color: $brown
+      font-size: 1.571rem
+      line-height: 2.428rem
+  &__content 
     display: flex
-    align-items: center
+    justify-content: space-between
+    align-items: flex-end
+  &__advantages 
+    max-width: 11.428rem
+    display: flex
+    justify-content: space-between
+    margin-left: -18px
+    &-image
+      margin-right: 30px
+  &__input 
+    margin-bottom: 6px
+  &__policy 
+    max-width: 253px
+    display: flex
     justify-content: center
-    left: 0
-    bottom: 0
-    min-width: 17.6rem
-    min-height: 6.92rem
-    background-color: $dark
-    text-transform: uppercase
-    text-decoration: none
-    color: $light
-    transition: box-shadow 0.2s color 0.3s
-    font-size: 0.857rem
-    font-family: 'Yeseva One', cursive
-    &::after
-      content: ''
-      background: url('../img/arrow-down.svg') no-repeat center
-      width: 30px
-      height: 30px
-      border: 2px solid $primary
-      border-radius: 50%
-      margin-left: 12px
-    &:hover
-      background-color: $primary
-      color: $light
-.instagram
-  display: flex
-  justify-content: center
-  align-items: center
-  background-color: $dark
-  &__link
-    display: flex
     align-items: center
-    text-transform: uppercase
-    color: $primary
-    text-decoration: none
-    transform: rotate(90deg)
-    transition: 0.3s
-    font-size: 1rem
-    line-height: 1.14rem
-    margin-bottom: 4.46rem
-    font-family: 'Futura Demi', sans-serif
-    &::after
-      content: ''
-      width: 3.6rem
-      height: 0.07rem
-      background-color: $primary
-      margin-left: 1.36rem
-    &:hover
+    margin: 12px 19px 24px 19px
+    &-text 
+      font-size: 11px
+      font-weight: 300
+      line-height: 11px
       color: $light
-.title
-  margin: 0
-  text-transform: uppercase
-  font-family: 'Yeseva One', cursive
-  font-size: 2.875rem
-  line-height: 1.4
-  &--primary
-    color: $primary
+      text-align: center
+  &-form 
+    max-width: 21.5rem
+    background-color: $red
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border: 5px solid $lightyellow
+    &__button 
+      margin-top: 14px
+      padding: 22px 59px
+      background-color: #12edc9
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09)
+    &__title 
+      font-family: 'RobotoCondensed-Bold', sans-serif
+      font-size: 1.5rem
+      font-weight: bold
+      line-height: 1.571rem
+      color: $lightyellow
+      text-transform: uppercase
+      margin: 25px auto 23px
+    &__subtitle 
+      font-size: 1.285rem
+.input 
+  max-width: 17.928rem
+  background-color: $light
+  border: none
+  border-radius: 2px
+  font-family: 'Roboto-Regular', sans-serif
+  font-size: 1rem
+  font-weight: 300
+  line-height: 0.967rem
+  outline: none
+  padding: 14px 100px 14px 15px
+.button
+  &__form 
+    font-size: 18px
+    font-weight: bold
+    line-height: 13.55px
+    text-transform: uppercase
+    color: $light
+    border-radius: 2px
+    border: 1px solid transparent

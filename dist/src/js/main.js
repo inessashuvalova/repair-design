@@ -1,0 +1,1 @@
+$(document).ready((function(){new Swiper(".swiper-container",{loop:!0,pagination:{el:".swiper-pagination",type:"bullets"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}));
